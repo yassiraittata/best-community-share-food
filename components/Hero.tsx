@@ -6,7 +6,7 @@ import PastaImage from "@/assets/hero/pasta.jpeg";
 
 const Hero = () => {
   return (
-    <section className="max-w-[80%] mx-auto p-5 h-fit bg-white rounded-2xl mt-5 flex items-center justify-between">
+    <section className="max-w-[80%] mx-auto p-5 h-fit bg-white rounded-2xl flex items-center justify-between">
       <div className="w-1/2">
         <div className="flex items- p-5 relative h-80">
           <div className="w-52 h-52 flex absolute top-8 left-2">
@@ -40,18 +40,18 @@ const Hero = () => {
       </div>
       <div className="w-1/2 flex flex-col">
         <span className="text-sm text-secodary">Hungry?</span>
-        <h1 className="text-4xl font-extrabold font-oswald">
-          Search <span className="text-primary">No MORE</span>. <br />
-          Find more than <span className="text-primary">1000 recipes.</span>
+        <h1 className="text-4xl font-extrabold">
+          Find more than{" "}
+          <span className="text-primary underline">1000 recipes.</span>
         </h1>
         <p className="mt-3 font-semibold text-dark-gray">
-          Cook delicious food, save your time!
+          Cook delicious food, and save your time!
         </p>
         <div className="mt-4 flex space-x-5">
-          <button className="py-3 px-5 bg-secodary hover:bg-secodary/80 text-white font-medium rounded-lg shadow-lg transition-all">
+          <button className="py-2 px-5 bg-secodary hover:bg-secodary/80 text-white font-medium rounded-lg shadow-lg transition-all">
             Share your delicious recipes
           </button>
-          <button className="py-3 px-5 border-2 text-secodary border-secodary hover:bg-secodary hover:text-white font-medium rounded-lg shadow-lg transition-all">
+          <button className="py-2 px-5 border-2 text-secodary border-secodary hover:bg-secodary hover:text-white font-medium rounded-lg shadow-lg transition-all">
             Find a recipe
           </button>
         </div>
