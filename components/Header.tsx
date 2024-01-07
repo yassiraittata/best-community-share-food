@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <header className="flex items-center justify-center mt-10 mb-5">
       <div className="max-w-[80%]  w-full p-5 rounded-2xl backdrop-blur-xl bg-white drop-shadow-md flex justify-between items-center">
-        <h1 className="text-secodary font-bold text-2xl ">FOODIE</h1>
+        <h1 className="text-secodary font-bold text-2xl ">
+          <Link href="/">FOODIE</Link>
+        </h1>
         <div>
           <ul className="flex justify-between items-center space-x-12">
             <li className="font-medium hover:text-primary">
