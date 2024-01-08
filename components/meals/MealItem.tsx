@@ -1,9 +1,12 @@
+"use client";
+
 import { ClockIcon, ShoppingCartIcon } from "@heroicons/react/24/solid";
 import { BookmarkIcon, HeartIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const MealItem = () => {
   return (
-    <li>
+    <Link href="/">
       <div className="inline-grid max-w-xs sm:max-w-xs lg:max-w-lg lg:flex bg-white rounded-lg border shadow-lg pb-6 lg:pb-0">
         <div className="w-full lg:w-1/3 lg:p-4">
           <img
@@ -58,7 +61,7 @@ const MealItem = () => {
           </p>
         </div>
       </div>
-    </li>
+    </Link>
   );
 };
 

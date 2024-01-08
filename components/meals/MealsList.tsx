@@ -1,10 +1,9 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation, Mousewheel, Keyboard } from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import MealItem from "./MealItem";
@@ -17,13 +16,17 @@ const MealsList = () => {
       </h2>
       <ul className="mt-5">
         <Swiper
+        
           slidesPerView={2.4}
+          mousewheel={true}
+          keyboard={true}
           spaceBetween={30}
           pagination={{
             type: "fraction",
           }}
           navigation={true}
-          modules={[Navigation]}
+          modules={[Navigation, Mousewheel, Keyboard]}
+          noSwiping={false}
           className="w-full"
         >
           <SwiperSlide>
