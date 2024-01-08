@@ -7,7 +7,13 @@ const MealsList = () => {
       <h2 className="text-7xl font-extrabold text-secodary/30 font-oswald uppercase">
         Popular meals
       </h2>
-      <ul className="mt-5">
+      <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-8">
+        <MealItem />
+        <MealItem />
+        <MealItem />
+        <MealItem />
+        <MealItem />
+        <MealItem />
         <MealItem />
       </ul>
     </section>

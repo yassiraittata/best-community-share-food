@@ -1,9 +1,9 @@
-import {  } from "@heroicons/react";
+import { ClockIcon, ShoppingCartIcon } from "@heroicons/react/24/solid";
+import { BookmarkIcon, HeartIcon } from "@heroicons/react/24/outline";
 
 const MealItem = () => {
   return (
-    <>
-      {" "}
+    <li>
       <div className="inline-grid max-w-xs sm:max-w-xs lg:max-w-lg lg:flex bg-white rounded-lg border shadow-lg pb-6 lg:pb-0">
         <div className="w-full lg:w-1/3 lg:p-4">
           <img
@@ -15,13 +15,26 @@ const MealItem = () => {
 
         <div className="w-full lg:w-2/3 p-4">
           <div className="inline-grid">
-            <p className="work-sans font-semibold text-xl text-dark-gray">
-              Cheese burger
-            </p>
-            <span className="work-sans font-semibold text-xs text-light-gray">
-              <i className="uppercase text-secodary font-semibold">By: </i>
-              Yassir ait tata
-            </span>
+            <div className="flex items-start justify-between">
+              <div>
+                <p className="work-sans font-semibold text-xl text-dark-gray">
+                  Cheese burger
+                </p>
+                <span className="work-sans font-semibold text-xs text-light-gray">
+                  <i className="uppercase text-secodary font-semibold">By: </i>
+                  Yassir ait tata
+                </span>
+              </div>
+              <div className="flex gap-3">
+                <button>
+                  <HeartIcon className="text-primary w-6 h-6" />
+                </button>
+                <button>
+                  <BookmarkIcon className="text-primary w-6 h-6" />
+                </button>
+              </div>
+            </div>
+
             <p className="text-sm my-4 text-black opacity-75 line-clamp-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem fuga odit repellendus vero iure alias accusamus ex
@@ -31,22 +44,21 @@ const MealItem = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center -mt-8 rounded-b-lg max-w-xs lg:max-w-lg lg:-mt-8 lg:justify-end lg:pr-8 py-1">
-        <div className="text-white py-3 px-4 rounded-lg bg-blue-500">
-          <p className="work-sans font-semibold text-sm tracking-wide">
-            Primary action
+      <div className="flex justify-start gap-5 -mt-8 rounded-b-lg max-w-xs lg:max-w-lg lg:-mt-6 lg:justify-end lg:pr-8 py-1">
+        <div className="text-white flex items-center justify-center px-4 py-2 rounded-lg bg-light-gray">
+          <p className="work-sans flex gap-2 items-center justify-center font-semibold text-sm tracking-wide">
+            <ClockIcon className="w-6 h-6 text-secodary" />{" "}
+            <span className="text-lg font-light">5 min</span>
           </p>
         </div>
-        <button
-          type="button"
-          className="py-3 px-4 bg-blue-500 rounded-lg ml-3 text-white"
-        >
-          <p className="work-sans font-semibold text-sm tracking-wide">
-            Secondary action
+        <div className="text-white flex items-center justify-center px-4 py-2 rounded-lg bg-secodary">
+          <p className="work-sans flex gap-2 items-center justify-center font-semibold text-sm tracking-wide">
+            <ShoppingCartIcon className="w-6 h-6 text-white" />{" "}
+            <span className="text-lg font-light">5 ingredients</span>
           </p>
-        </button>
+        </div>
       </div>
-    </>
+    </li>
   );
 };
 
