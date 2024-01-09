@@ -1,7 +1,12 @@
 import React from "react";
+import CategoryItem from "./CategoryItem";
 
 const CategoryList = () => {
-  return <section></section>;
+  return (
+    <section>
+      <CategoryItem />
+    </section>
+  );
 };
 
 export default CategoryList;
